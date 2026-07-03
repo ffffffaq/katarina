@@ -449,13 +449,13 @@ footer {
 </section>
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
-Ы
+
 <!-- WISHES -->
 <section id="wishes">
   <div class="container">
     <div class="glass wishes-card reveal">
       <span class="section-tag">поздравление</span>
-      <h2>Ты - особенная(не в плане дцп)</h2>
+      <h2>Ты - особенная</h2>
       <p class="reveal reveal-delay-1">
         Сегодня твой день, и я рад, что могу сказать тебе это лично. Ты - один из
         самых настоящих людей, которых я знаю. Рядом с тобой всё становится
@@ -494,7 +494,7 @@ footer {
     <div class="quote-block reveal">
       <blockquote>
         «Ты сама по себе - целая вселенная, которую ещё только предстоит открыть.»
-        <cite>❤️</cite>
+        <cite>- с уважением</cite>
       </blockquote>
     </div>
   </div>
@@ -527,7 +527,7 @@ footer {
       <blockquote>
         «Есть люди, которые входят в жизнь и делают её навсегда немного светлее.
         Ты - именно такой человек.»
-        <cite>❤️</cite>
+        <cite>- для тебя</cite>
       </blockquote>
     </div>
   </div>
@@ -559,7 +559,7 @@ footer {
       <blockquote>
         «Красота - это не только внешность. Это то, как ты думаешь, как ты
         относишься к людям, как ты проживаешь каждый день.»
-        <cite>❤️</cite>
+        <cite>- навсегда твоё</cite>
       </blockquote>
     </div>
   </div>
@@ -604,8 +604,8 @@ footer {
         <p>Пусть у тебя будет всё, что ты хочешь. С Днём Рождения, Катарина.</p>
       </div>
       <div id="gift-btn-wrap">
-        <a class="btn-gift" href="https://www.youtube.com/" target="_blank" rel="noopener">
-          нажми
+        <a class="btn-gift" href="http://goldapple.ru/cards/receive/afeb5886892549638eab68fd7e81ccbd?from=email" target="_blank" rel="noopener">
+          Нажми сюда
         </a>
       </div>
     </div>
@@ -620,7 +620,7 @@ footer {
 /* TYPEWRITER */
 const phrases = [
   'Ты - человек, рядом с которым хорошо.',
-  'Сегодня весь день только твой!',
+  'Сегодня весь день только твой.',
   'Надеюсь, этот год будет твоим лучшим.',
 ];
 let pIdx=0,cIdx=0,deleting=false;
@@ -699,8 +699,8 @@ let finalDone=false;
 new IntersectionObserver(entries=>{
   if(entries[0].isIntersecting&&!finalDone){
     finalDone=true;
-    finalPs.forEach((p,i)=>setTimeout(()=>p.classList.add('show'),i*900+300));
-    setTimeout(()=>giftWrap.classList.add('visible'),finalPs.length*900+2800);
+    finalPs.forEach((p,i)=>setTimeout(()=>p.classList.add('show'),i*400+200));
+    setTimeout(()=>giftWrap.classList.add('visible'),finalPs.length*400+800);
   }
 },{threshold:0.25}).observe(document.getElementById('final-section'));
 
@@ -804,7 +804,7 @@ function toggleMusic(){
   else{audio.play();playing=true;setBtn(true);}
 }
 
-window.addEventListener('load',startAudio);
+startAudio();
 </script>
 </body>
 </html>
