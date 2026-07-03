@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<!-- <meta charset="UTF-8" /> -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>С Днём Рождения, Катариночка</title>
 <style>
@@ -119,7 +118,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
 .reveal-delay-1 { transition-delay: .15s; }
 .reveal-delay-2 { transition-delay: .30s; }
 
-/* HERO */
 #hero {
   min-height: 100vh; display: flex; flex-direction: column;
   align-items: center; justify-content: center;
@@ -210,7 +208,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
   50%      { transform: translateX(-50%) translateY(8px); }
 }
 
-/* PHOTOS */
 .photo-row {
   max-width: 900px; margin: 0 auto;
   display: flex; align-items: center;
@@ -262,7 +259,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
 }
 .side-text strong { color: var(--rose-deep); font-style: normal; }
 
-/* WISHES */
 #wishes { text-align: center; }
 .wishes-card { padding: 52px 44px; max-width: 700px; margin: 0 auto; }
 .wishes-card .section-tag {
@@ -273,7 +269,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
 .wishes-card p  { font-size: 1.05rem; line-height: 1.95; color: var(--text-soft); margin-bottom: 18px; }
 .wishes-card p:last-child { margin-bottom: 0; }
 
-/* QUOTE */
 .quote-block { max-width: 580px; margin: 0 auto; text-align: center; padding: 28px 20px; }
 .quote-block blockquote {
   font-size: clamp(1.05rem, 2.6vw, 1.38rem); font-style: italic;
@@ -288,7 +283,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
   letter-spacing: .12em; color: var(--gold-warm); font-style: normal;
 }
 
-/* FINAL */
 #final { min-height: 75vh; display: flex; align-items: center; justify-content: center; text-align: center; }
 .final-card { padding: 60px 48px; max-width: 660px; margin: 0 auto; }
 .final-card .big-heart {
@@ -332,7 +326,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
   50%      { box-shadow: 0 0 50px rgba(245,200,66,.75), 0 8px 46px rgba(232,116,154,.58); }
 }
 
-/* LIGHTBOX */
 #lightbox {
   position: fixed; inset: 0; z-index: 500;
   background: rgba(28,8,18,.92);
@@ -361,7 +354,6 @@ section { position: relative; width: 100%; padding: 90px 24px 60px; }
 .lb-prev:hover { color: var(--rose-mid); transform: translateY(-50%) translateX(-3px); }
 .lb-next:hover { color: var(--rose-mid); transform: translateY(-50%) translateX(3px); }
 
-/* MUSIC */
 #music-btn {
   position: fixed; bottom: 22px; right: 22px; z-index: 200;
   width: 50px; height: 50px; border-radius: 50%;
@@ -408,7 +400,6 @@ footer {
 <div id="bg-gradient"></div>
 <canvas id="particle-canvas"></canvas>
 
-<!-- Замени src на путь к своему аудиофайлу -->
 <audio id="bg-music" loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
@@ -429,7 +420,6 @@ footer {
 
 <main>
 
-<!-- HERO -->
 <section id="hero">
   <div class="container" style="position:relative;z-index:2;">
     <div class="hero-badge">5 июля 2008</div>
@@ -450,7 +440,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- WISHES -->
 <section id="wishes">
   <div class="container">
     <div class="glass wishes-card reveal">
@@ -472,7 +461,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- PHOTO 1 - большое, слева -->
 <section style="padding-top:40px;padding-bottom:40px;">
   <div class="photo-row left">
     <div class="photo-float sz-lg tilt-r1 reveal-left" data-photo="photo1.jpg">
@@ -488,7 +476,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- QUOTE 1 -->
 <section style="padding-top:28px;padding-bottom:20px;">
   <div class="container">
     <div class="quote-block reveal">
@@ -500,7 +487,6 @@ footer {
   </div>
 </section>
 
-<!-- PHOTO 2 - среднее, справа -->
 <section style="padding-top:28px;padding-bottom:40px;">
   <div class="photo-row right">
     <div class="photo-float sz-md tilt-l1 reveal-right" data-photo="photo2.jpg">
@@ -511,7 +497,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- PHOTO 3 - по центру, широкое -->
 <section style="padding-top:20px;padding-bottom:40px;">
   <div class="photo-row center">
     <div class="photo-float sz-wide tilt-r2 reveal" data-photo="photo3.jpg">
@@ -520,7 +505,6 @@ footer {
   </div>
 </section>
 
-<!-- QUOTE 2 -->
 <section style="padding-top:20px;padding-bottom:20px;">
   <div class="container">
     <div class="quote-block reveal">
@@ -535,7 +519,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- PHOTOS 4 5 6 - три в ряд -->
 <section style="padding-top:20px;padding-bottom:20px;">
   <div class="photo-row spread" style="align-items:flex-start;">
     <div class="photo-float sz-sm tilt-l2 reveal-left" data-photo="photo4.jpg">
@@ -552,7 +535,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- QUOTE 3 -->
 <section style="padding-top:20px;padding-bottom:20px;">
   <div class="container">
     <div class="quote-block reveal">
@@ -565,7 +547,6 @@ footer {
   </div>
 </section>
 
-<!-- PHOTO 7 - справа, с текстом слева -->
 <section style="padding-top:20px;padding-bottom:20px;">
   <div class="photo-row right">
     <div class="side-text reveal-left reveal-delay-1" style="max-width:270px;">
@@ -581,7 +562,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- PHOTO 8 - по центру -->
 <section style="padding-top:20px;padding-bottom:60px;">
   <div class="photo-row center">
     <div class="photo-float sz-md tilt-r1 reveal" data-photo="photo8.jpg">
@@ -592,7 +572,6 @@ footer {
 
 <div class="divider reveal"><div class="divider-dot"></div></div>
 
-<!-- FINAL -->
 <section id="final">
   <div class="container">
     <div class="glass final-card reveal" id="final-section">
@@ -617,7 +596,6 @@ footer {
 <footer>специально для тебя</footer>
 
 <script>
-/* TYPEWRITER */
 const phrases = [
   'Ты - человек, рядом с которым хорошо.',
   'Сегодня весь день только твой.',
@@ -639,21 +617,18 @@ function typeStep(){
 }
 setTimeout(typeStep,900);
 
-/* SCROLL REVEAL */
 const allReveal=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
 const revObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
 },{threshold:0.1});
 allReveal.forEach(el=>revObs.observe(el));
 
-/* PHOTOS - hide missing */
 document.querySelectorAll('.photo-float').forEach(w=>{
   const img=w.querySelector('img');
   if(!img)return;
   img.onerror=()=>{w.style.display='none';};
 });
 
-/* LIGHTBOX */
 const lb=document.getElementById('lightbox');
 const lbImg=document.getElementById('lb-img');
 let lbSrcs=[],lbCur=0;
@@ -692,7 +667,6 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight')lbStep(1);
 });
 
-/* FINAL + GIFT */
 const finalPs=document.querySelectorAll('#final-text p');
 const giftWrap=document.getElementById('gift-btn-wrap');
 let finalDone=false;
@@ -704,14 +678,12 @@ new IntersectionObserver(entries=>{
   }
 },{threshold:0.25}).observe(document.getElementById('final-section'));
 
-/* PARTICLES */
 (function(){
   const canvas=document.getElementById('particle-canvas');
   const ctx=canvas.getContext('2d');
   let W,H;
   function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
   resize();window.addEventListener('resize',resize);
-  // Only geometric particles - no emoji to keep it subtle
   function rnd(){
     const type=Math.random()<0.4?'circle':'heart';
     return{
@@ -755,7 +727,6 @@ new IntersectionObserver(entries=>{
   draw();
 })();
 
-/* STARS */
 (function(){
   const f=document.createDocumentFragment();
   for(let i=0;i<24;i++){
@@ -768,14 +739,12 @@ new IntersectionObserver(entries=>{
   document.body.appendChild(f);
 })();
 
-/* PARALLAX */
 const pRoses=document.querySelectorAll('.parallax-rose');
 window.addEventListener('scroll',()=>{
   const sy=window.scrollY;
   pRoses.forEach((el,i)=>{el.style.transform=`translateY(${sy*.1*(i%2===0?1:-1)}px)`;});
 },{passive:true});
 
-/* MUSIC - autoplay on load, toggle on button */
 const audio=document.getElementById('bg-music');
 const mBtn=document.getElementById('music-btn');
 let playing=false;
@@ -788,7 +757,6 @@ function setBtn(isPlaying){
 function startAudio(){
   audio.volume=0.45;
   audio.play().then(()=>{playing=true;setBtn(true);}).catch(()=>{
-    // Autoplay blocked - wait for first user interaction
     const unlock=()=>{
       audio.play().then(()=>{playing=true;setBtn(true);});
       document.removeEventListener('click',unlock);
